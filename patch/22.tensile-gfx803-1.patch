@@ -11,3 +11,4 @@ index 6dfd4730..26b198db 100644
  
  globalParameters["GenerateManifestAndExit"] = False               # Output manifest file with list of expected library objects and exit
  globalParameters["NewClient"] = 2                                 # Old client deprecated: NewClient must be set to 2.
+ 
