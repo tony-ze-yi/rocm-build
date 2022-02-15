@@ -33,7 +33,6 @@ CXX=$ROCM_INSTALL_DIR/bin/hipcc cmake \
     -DTensile_CODE_OBJECT_VERSION=V3 \
     -DCMAKE_BUILD_TYPE=Release \
     -DTensile_TEST_LOCAL_PATH=$ROCM_GIT_DIR/Tensile \
-    -DBUILD_WITH_TENSILE_HOST=ON \
     -DTensile_LIBRARY_FORMAT=yaml \
     -DRUN_HEADER_TESTING=OFF \
     -DTensile_COMPILER=hipcc \
