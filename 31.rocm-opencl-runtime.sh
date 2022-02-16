@@ -6,6 +6,11 @@ mkdir -p $ROCM_BUILD_DIR/rocm-opencl-runtime
 cd $ROCM_BUILD_DIR/rocm-opencl-runtime
 pushd .
 
+cd $ROCM_GIT_DIR/ROCclr
+git reset --hard
+git apply $ROCM_PATCH_DIR/31.rocm-opencl-runtime-rocclr-gfx803-1.patch
+cd $ROCM_BUILD_DIR/rocm-opencl-runtime
+
 START_TIME=`date +%s`
 
 cmake \
